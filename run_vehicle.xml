@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4b73f5">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1.5"
+        android:padding="20dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#ffffff"
+            android:layout_margin="10dp">
+
+            <TextView
+                android:layout_gravity="left"
+                android:textColor="#4b73f5"
+                android:padding="10dp"
+                android:text="주 행 시 간"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <Chronometer
+                android:textSize="30dp"
+                android:textColor="#4b73f5"
+                android:id="@+id/chrono"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:format = "%s"
+                android:layout_marginRight="20dp"
+                android:layout_gravity="right" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#ffffff"
+            android:layout_margin="10dp">
+
+            <TextView
+                android:layout_gravity="left"
+                android:textColor="#4b73f5"
+                android:padding="10dp"
+                android:text="주 행 거 리"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#ffffff"
+            android:layout_margin="10dp">
+
+            <TextView
+                android:layout_gravity="left"
+                android:textColor="#4b73f5"
+                android:padding="10dp"
+                android:text="평 균 속 도"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="5">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ToggleButton
+                android:id="@+id/timeToggle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="10dp"
+                android:background="#ffffff"
+                android:textOff="시작"
+                android:textOn="정지"/>
+            <Button
+                android:id="@+id/stopBtn"
+                android:text="초기화"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="25dp"
+                android:background="#ffffff"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
