@@ -1,18 +1,28 @@
 package com.sunyoung.test2;
 
-import android.app.Fragment;
+import android.app.Activity;
 import android.content.Context;
+import android.net.Uri;
 import android.os.Bundle;
-import android.support.v4.app.FragmentActivity;
-import android.support.v7.app.AppCompatActivity;
+import android.app.Fragment;
+import android.renderscript.Matrix3f;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+
 /**
- * Created by SUNYOUNG on 2016-01-06.
+ * A simple {@link Fragment} subclass.
  */
-public class VehicleRecord extends Fragment {
+public class MyFragment3 extends android.support.v4.app.Fragment {
+
+    public static android.support.v4.app.Fragment newInstance(int page) {
+        MyFragment3 fragment = new MyFragment3();
+        Bundle args = new Bundle();
+        fragment.setArguments(args);
+        return fragment;
+    }
+
     @Override
     public void onAttach(Context context) {
         super.onAttach(context);
@@ -25,7 +35,7 @@ public class VehicleRecord extends Fragment {
 
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.record_vehicle, container, false);
+        return inflater.inflate(R.layout.fragment_my_fragment3, container, false);
     }
 
     @Override

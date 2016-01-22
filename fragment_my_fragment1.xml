@@ -1,0 +1,69 @@
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.sunyoung.test2.MyFragment1"
+    android:id="@+id/vehicleID">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#4b73f5">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageButton
+                android:id="@+id/carBtn1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:background="#ffffff"
+                android:src="@mipmap/ic_launcher"
+                android:layout_weight="1"
+                android:onClick="selectFrag"/>
+
+            <ImageButton
+                android:id="@+id/carBtn2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:background="#ffffff"
+                android:src="@mipmap/ic_launcher"
+                android:layout_weight="1"
+                android:onClick="selectFrag"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageButton
+                android:id="@+id/carBtn3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:background="#ffffff"
+                android:src="@mipmap/ic_launcher"
+                android:layout_weight="1"
+                android:onClick="selectFrag"/>
+
+            <ImageButton
+                android:id="@+id/carBtn4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:background="#ffffff"
+                android:src="@mipmap/ic_launcher"
+                android:layout_weight="1"
+                android:onClick="selectFrag"/>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>
